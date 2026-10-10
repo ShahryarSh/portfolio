@@ -1,0 +1,62 @@
+<!-- The HTML5 doctype declaration informs the browser of the document type -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- Character set UTF-8 for universal symbol support -->
+  <meta charset="UTF-8">
+  
+  <!-- Viewport meta tag forces mobile devices to report actual screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Personal Portfolio</title>
+  
+  <!-- Full-size desktop/laptop stylesheet (960px or wider) -->
+  <link rel="stylesheet" type="text/css" href="full.css" media="only screen and (min-width: 960px)">
+  
+  <!-- Tablet stylesheet (between 481px and 960px) -->
+  <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+  
+  <!-- Mobile phone stylesheet (480px or narrower) -->
+  <link rel="stylesheet" type="text/css" href="phone.css" media="only screen and (max-width: 480px)">
+</head>
+<body>
+
+  <!-- Wrapper ID container wraps all visible page content -->
+  <div id="wrapper">
+    
+    <!-- Header section holding site branding and navigation -->
+    <header>
+      <h1>Personal Portfolio</h1>
+      
+      <!-- Semantic navigation tag containing page navigation links -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content container -->
+    <article>
+      <h2>Welcome to My Portfolio</h2>
+      <p>Welcome to the home page of my personal website built using HTML5 and CSS3!</p>
+    </article>
+
+    <!-- Clear class terminates float inheritance before the footer -->
+    <div class="clear"></div>
+
+    <!-- HTML5 semantic footer tag with copyright and contact email -->
+    <footer>
+      <p>&copy; 2026 Shahryar Shahid. All Rights Reserved.</p>
+      <address>
+        <p>Contact: <a href="mailto:shahryar.shahid@ontariotechu.net">shahryar.shahid@ontariotechu.net</a></p>
+      </address>
+    </footer>
+
+  </div><!-- End of wrapper -->
+
+</body>
+</html>

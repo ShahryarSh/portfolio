@@ -1,0 +1,102 @@
+<!-- The HTML5 doctype declaration informs the browser that this document follows the HTML5 specification -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- Character set UTF-8 for universal symbol support -->
+  <meta charset="UTF-8">
+  
+  <!-- Viewport meta tag forces mobile devices to report actual screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Personal Portfolio</title>
+  
+  <!-- Full-size desktop/laptop stylesheet (960px or wider) -->
+  <link rel="stylesheet" type="text/css" href="full.css" media="only screen and (min-width: 960px)">
+  
+  <!-- Tablet stylesheet (between 481px and 960px) -->
+  <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+  
+  <!-- Mobile phone stylesheet (480px or narrower) -->
+  <link rel="stylesheet" type="text/css" href="phone.css" media="only screen and (max-width: 480px)">
+</head>
+<body>
+
+  <!-- ID selector div container creates the centered 960px layout wrapper -->
+  <div id="wrapper">
+    
+    <!-- HTML5 semantic header tag contains the main site title and navigation -->
+    <header>
+      <h1>Personal Portfolio</h1>
+      
+      <!-- HTML5 semantic nav tag encloses the site navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HTML5 semantic article tag contains the primary contact page content -->
+    <article>
+      <h2>Contact Me</h2>
+      <p>Please fill out the form to get in touch.</p>
+
+      <!-- 
+        HTML5 Form Element:
+        - action: specifies mailto action to handle form submission via email
+        - method: set to post for sending data
+        - enctype: text/plain sends data as unencrypted plain text
+      -->
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        
+        <!-- Name Field with required text validation -->
+        <p>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" size="32" placeholder="Your full name" required>
+        </p>
+
+        <!-- Email Field with built-in email structure validation -->
+        <p>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" size="40" placeholder="example@domain.com" required>
+        </p>
+
+        <!-- Cell / Phone Number Field using HTML5 tel input type -->
+        <p>
+          <label for="phone">Cell No.:</label><br>
+          <input type="tel" id="phone" name="phone" size="20" placeholder="123-456-7890" required>
+        </p>
+
+        <!-- Comments Area with multi-line textarea and character limit -->
+        <p>
+          <label for="comments">Comments / Message:</label><br>
+          <textarea id="comments" name="comments" rows="6" cols="50" maxlength="300" placeholder="Write your message here..."></textarea>
+        </p>
+
+        <!-- Action Buttons: Submit triggers validation/sending, Reset clears inputs -->
+        <p>
+          <input type="submit" value="Send Message">
+          <input type="reset" value="Clear Form">
+        </p>
+
+      </form>
+    </article>
+
+    <!-- Class div with class "clear" terminates float inheritance before the footer element -->
+    <div class="clear"></div>
+
+    <!-- HTML5 semantic footer tag with copyright and contact email -->
+    <footer>
+      <p>&copy; 2026 Shahryar Shahid. All Rights Reserved.</p>
+      <address>
+        <p>Contact: <a href="mailto:shahryar.shahid@ontariotechu.net">shahryar.shahid@ontariotechu.net</a></p>
+      </address>
+    </footer>
+
+  </div><!-- End of wrapper div -->
+
+</body>
+</html>

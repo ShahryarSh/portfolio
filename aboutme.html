@@ -1,0 +1,84 @@
+<!-- The HTML5 doctype declaration informs the browser that this document follows the HTML5 specification -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- Character set UTF-8 for universal symbol support -->
+  <meta charset="UTF-8">
+  
+  <!-- Viewport meta tag forces mobile devices to report actual screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Personal Portfolio</title>
+  
+  <!-- Full-size desktop/laptop stylesheet (960px or wider) -->
+  <link rel="stylesheet" type="text/css" href="full.css" media="only screen and (min-width: 960px)">
+  
+  <!-- Tablet stylesheet (between 481px and 960px) -->
+  <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+  
+  <!-- Mobile phone stylesheet (480px or narrower) -->
+  <link rel="stylesheet" type="text/css" href="phone.css" media="only screen and (max-width: 480px)">
+</head>
+<body>
+
+  <!-- ID selector div container creates the centered 960px layout wrapper -->
+  <div id="wrapper">
+    
+    <!-- HTML5 semantic header tag contains the main site title and navigation -->
+    <header>
+      <h1>Personal Portfolio</h1>
+      
+      <!-- HTML5 semantic nav tag encloses the site navigation menu -->
+      <nav>
+        <!-- Unordered list holds individual navigation link items -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HTML5 semantic article tag contains the main independent page content -->
+    <article>
+      <h2>About Me</h2>
+      
+      <!-- Image tag embeds profile photo; src points to the file name and alt provides accessible text -->
+      <img src="profile.jpg" alt="Profile photo of myself">
+      
+      <!-- Paragraph tag contains introductory text about yourself -->
+      <p>Welcome! My name is Shahryar Shahid. I am a student at Ontario Tech University creating this personal portfolio website using HTML5 and CSS3.</p>
+
+      <h3>Introductory Video</h3>
+      
+      <!-- 
+        HTML5 video element:
+        - width & height: sets player dimensions in pixels
+        - controls: enables native browser playback interface (play, pause, volume)
+        - poster: specifies static image frame shown before playback starts
+      -->
+      <video width="320" height="240" controls poster="profile.jpg">
+        <!-- Source tag provides video file path (intro.mp4) and specifies its container format MIME type -->
+        <source src="intro.mp4" type="video/mp4">
+        
+        <!-- Fallback text displayed only if the browser lacks native HTML5 video support -->
+        Your browser does not support the video tag.
+      </video>
+    </article>
+
+    <!-- Class div with class "clear" terminates float inheritance before the footer element -->
+    <div class="clear"></div>
+
+    <!-- HTML5 semantic footer tag with copyright and contact email -->
+    <footer>
+      <p>&copy; 2026 Shahryar Shahid. All Rights Reserved.</p>
+      <address>
+        <p>Contact: <a href="mailto:shahryar.shahid@ontariotechu.net">shahryar.shahid@ontariotechu.net</a></p>
+      </address>
+    </footer>
+
+  </div><!-- End of wrapper div -->
+
+</body>
+</html>

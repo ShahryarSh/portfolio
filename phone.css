@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document - Smartphone Mobile Viewport (max-width: 480px) */
+
+/* High-contrast body background for mobile reading in outdoor sunlight */
+body {
+  color: white;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+
+/* 100% fluid wrapper spanning phone viewport width */
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: DarkGrey;
+}
+
+/* Header and footer styling */
+header, footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Full-width stacked vertical touch navigation buttons */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: block;
+  margin: 8px 10px;
+}
+
+/* Navigation buttons for Tablet & Phone Viewports */
+nav ul li a {
+  font-size: large;
+  text-decoration: none;
+  background-color: #2563EB;
+  color: #FFFFFF;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #6A0DAD;
+  color: #FFFFFF;
+}
+
+/* High-contrast content container */
+article {
+  padding: 15px;
+  background-color: DarkOrange;
+  color: black;
+}
+
+/* Single-column fluid sections with float disabled to stack vertically */
+section {
+  width: 90%;
+  float: none;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Form input fields expand to fit narrow phone screens */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* Flexible media scaling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Clear class style */
+.clear {
+  clear: both;
+}

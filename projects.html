@@ -1,0 +1,92 @@
+<!-- The HTML5 doctype declaration informs the browser that this document follows the HTML5 specification -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- Character set UTF-8 for universal symbol support -->
+  <meta charset="UTF-8">
+  
+  <!-- Viewport meta tag forces mobile devices to report actual screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Personal Portfolio</title>
+  
+  <!-- Full-size desktop/laptop stylesheet (960px or wider) -->
+  <link rel="stylesheet" type="text/css" href="full.css" media="only screen and (min-width: 960px)">
+  
+  <!-- Tablet stylesheet (between 481px and 960px) -->
+  <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+  
+  <!-- Mobile phone stylesheet (480px or narrower) -->
+  <link rel="stylesheet" type="text/css" href="phone.css" media="only screen and (max-width: 480px)">
+</head>
+<body>
+
+  <!-- Centered 960px layout container wrapper -->
+  <div id="wrapper">
+    
+    <!-- HTML5 semantic header tag containing main heading and site navigation -->
+    <header>
+      <h1>Personal Portfolio</h1>
+      
+      <!-- HTML5 semantic nav tag encloses site navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HTML5 semantic article element holds the primary content block -->
+    <article>
+      <h2>Academic & Practical Projects</h2>
+      <p>Below are highlights of major projects and assignments I have completed in previous semesters.</p>
+
+      <!-- Project 1 Section -->
+      <section>
+        <h3>1. Object Oriented Programming: Car Purchase GUI</h3>
+        <p>Developed an interactive graphical user interface that allows customers to select vehicles from categorized lists including cars, motorcycles, and ATVs. The application dynamically calculates pricing and breaks down payment options across financing, leasing, or cash purchases.</p>
+      </section>
+
+      <!-- Project 2 Section -->
+      <section>
+        <h3>2. Discrete Mathematics: Graph Theory & Gambling Statistics</h3>
+        <p>Conducted a research and visualization project exploring probability routes surrounding the "just one more paradox" in gambling. Designed an interactive graph mapping statistical outcomes based on repeat plays to display average, median, and player-specific results.</p>
+      </section>
+
+      <!-- Project 3 Section -->
+      <section>
+        <h3>3. Cyber Security: TeamTNT Threat Analysis</h3>
+        <p>Executed a detailed threat analysis investigating the operations and evolution of the cybercrime group TeamTNT. Analyzed their primary attack vectors, operational methodologies, and major high-profile cloud infrastructure exploits.</p>
+      </section>
+
+      <!-- Project 4 Section -->
+      <section>
+        <h3>4. Collaborative Leadership: Professional Development Plan</h3>
+        <p>Formulated a comprehensive professional growth blueprint grounded in self-reflection and weakness evaluation. Constructed actionable milestone strategies designed to cultivate leadership competencies and achieve targeted career objectives.</p>
+      </section>
+
+      <!-- Project 5 Section -->
+      <section>
+        <h3>5. Web Development: HTML5 & CSS3 Portfolio Website</h3>
+        <p>Designed and structured a multi-page personal portfolio using HTML5 semantic elements, external CSS stylesheets, and embedded media. Built to deliver a responsive, centered 960px layout adhering to modern web design standards.</p>
+      </section>
+    </article>
+
+    <!-- Class div terminating float alignment before the footer -->
+    <div class="clear"></div>
+
+    <!-- HTML5 semantic footer tag with copyright and contact email -->
+    <footer>
+      <p>&copy; 2026 Shahryar Shahid. All Rights Reserved.</p>
+      <address>
+        <p>Contact: <a href="mailto:shahryar.shahid@ontariotechu.net">shahryar.shahid@ontariotechu.net</a></p>
+      </address>
+    </footer>
+
+  </div><!-- End of wrapper div -->
+
+</body>
+</html>

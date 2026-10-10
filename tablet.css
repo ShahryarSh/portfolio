@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document - Tablet Viewport (min-width: 481px and max-width: 960px) */
+
+/* Body styling for tablet viewports */
+body {
+  color: white;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+
+/* Fluid wrapper filling 100% of tablet screen width */
+#wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: DarkGrey;
+}
+
+/* High-contrast header and footer for tablet reading */
+header, footer {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* Navigation formatted into large, easy-to-tap touch buttons */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Navigation buttons for Tablet & Phone Viewports */
+nav ul li a {
+  font-size: large;
+  text-decoration: none;
+  background-color: #2563EB;
+  color: #FFFFFF;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #6A0DAD;
+  color: #FFFFFF;
+}
+
+/* High-contrast dark orange article background */
+article {
+  padding: 20px;
+  background-color: DarkOrange;
+  color: black;
+}
+
+/* Fluid 2-column project sections utilizing 45% percentage widths */
+section {
+  width: 45%;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  background-color: white;
+  min-height: 120px;
+}
+
+/* Responsive media sizing */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  background-color: black;
+  border: 2px white solid;
+}
+
+/* Clear class terminates float inheritance */
+.clear {
+  clear: both;
+}
