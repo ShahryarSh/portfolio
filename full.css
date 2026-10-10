@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document - Full Desktop Viewport with Blue/Purple/White Palette */
 
-/* Dark Midnight Indigo background across desktop viewport */
+/* Dark Indigo background across desktop viewport */
 body {
   background-color: #1E1B4B;
   color: #1E1B4B;
@@ -10,7 +10,7 @@ body {
   margin: 0px;
 }
 
-/* Centered 960px layout wrapper with Soft Lavender surface */
+/* Centered 960px layout wrapper with Lavender */
 #wrapper {
   width: 960px;
   margin-left: auto;
@@ -18,12 +18,12 @@ body {
   background-color: #EEF2FF;
 }
 
-/* Header with Royal Purple gradient to Dark Blue */
+/* Header with Purple to Dark Blue linear gradient */
 header {
-  background: #6A0DAD;
-  background: -moz-linear-gradient(to bottom, #6A0DAD 0%, #1E3A8A 100%);
-  background: -webkit-linear-gradient(to bottom, #6A0DAD 0%, #1E3A8A 100%);
-  background: -o-linear-gradient(to bottom, #6A0DAD 0%, #1E3A8A 100%);
+  background: #6A0DAD; /* Fallback solid color for legacy browsers */
+  background: -moz-linear-gradient(top, #6A0DAD 0%, #1E3A8A 100%);
+  background: -webkit-linear-gradient(top, #6A0DAD 0%, #1E3A8A 100%);
+  background: -o-linear-gradient(top, #6A0DAD 0%, #1E3A8A 100%);
   background: linear-gradient(to bottom, #6A0DAD 0%, #1E3A8A 100%);
   color: #FFFFFF;
   padding-top: 20px;
@@ -62,15 +62,34 @@ nav ul li a:hover {
   color: #FFFFFF;
 }
 
-/* Article container with angled lavender gradient */
+/* Article container with 45-degree angled lavender gradient */
 article {
   padding: 25px;
-  background: #EEF2FF;
+  background: #EEF2FF; /* Fallback solid color for legacy browsers */
+  background: -moz-linear-gradient(45deg, #EEF2FF 0%, #E0E7FF 100%);
+  background: -webkit-linear-gradient(45deg, #EEF2FF 0%, #E0E7FF 100%);
+  background: -o-linear-gradient(45deg, #EEF2FF 0%, #E0E7FF 100%);
   background: linear-gradient(45deg, #EEF2FF 0%, #E0E7FF 100%);
 }
 
 article h2, article h3 {
   color: #1E1B4B;
+}
+
+/* General responsive image rule */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific profile photo sizing & left float inside article */
+article img {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 /* Pure White section cards with Purple left accent border */
@@ -117,7 +136,7 @@ video {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer with Dark Indigo background and White text */
+/* Footer with Indigo background and White text */
 footer {
   background-color: #1E1B4B;
   color: #FFFFFF;
@@ -130,30 +149,7 @@ footer a {
   color: #EEF2FF;
 }
 
+/* Clear class terminates float inheritance */
 .clear {
   clear: both;
-}
-
-
-/* 1. Standard Linear Gradient (Top-to-Bottom) applied to <header> */
-header {
-  background: white; /* Fallback solid color for legacy browsers */
-  background: -moz-linear-gradient(top, white 0%, LightSlateGrey 100%);
-  background: -webkit-linear-gradient(top, white 0%, LightSlateGrey 100%);
-  background: -o-linear-gradient(top, white 0%, LightSlateGrey 100%);
-  background: linear-gradient(to bottom, white 0%, LightSlateGrey 100%);
-  color: black;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-/* 2. Angled Linear Gradient (45 Degrees) applied to <article> */
-article {
-  background: LightGray; /* Fallback solid color for legacy browsers */
-  background: -moz-linear-gradient(45deg, LightGray 0%, SlateGrey 100%);
-  background: -webkit-linear-gradient(45deg, LightGray 0%, SlateGrey 100%);
-  background: -o-linear-gradient(45deg, LightGray 0%, SlateGrey 100%);
-  background: linear-gradient(45deg, LightGray 0%, SlateGrey 100%);
-  padding: 20px;
 }
