@@ -28,3 +28,12 @@
 ## Cobaly/Royal Blue ("2563EB) applied to navigation hover states, touch buttons, and interactive borders for visibility
 ## Lavendar ("EEF2FF") applied to article containers
 ## Pure White ("FFFFFF") applied to <section>
+
+## Code Citations and references
+
+## Course Lecture and Tutorial Materials (Weeks 1-4)
+## HTML5 Semantic architecture and form validation implemented using strucutrual guidlines and semenatic elements from week 1: Basics of HTML and CSS and Week 2: Embedding Native Video & Building Forms
+## Native Media Embedding controls and fallback specifications follow HTML5 standsrds covered in week 2: Embedding Native Video
+## Responsive Design & Media Queires; fluid percentage layous, centered 960px wrappers, and conditional media query breakpoints follow principles from week 3: HTML5 and CSS Responsive Design and Week 4: Web Devlopment Tutorials
+## CSS3 Linear Gradients Top to botttom and 45 degree angled gradients follow implementation rules given in Week 1 and 4 lecture notes
+## Adobe Express Color Wheel Tool was used for the 5-colour palette I chose
